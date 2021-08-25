@@ -1,9 +1,14 @@
-variable "name" {
-  description = "The name of the resource group. Must be unique on your Azure subscription."
-  #default    = "playground"
-}
+variable "TENANT_ID" {}
+variable "SUBSCRIPTION_ID" {}
+variable "CLIENT_ID" {}
+variable "CLIENT_SECRET" {}
 
-variable "location" {
-  description = "The location where the resource group should be created."
-  default     = "centralus"
+variable "organization" {}
+variable "vsc_identifier" {}
+variable "vsc_token" {}
+
+variable "tfe_token" {}
+
+provider "tfe" {
+  token = "${var.tfe_token}"
 }
