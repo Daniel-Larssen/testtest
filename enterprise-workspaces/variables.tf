@@ -6,6 +6,7 @@ variable "CLIENT_SECRET" {}
 variable "organization" {}
 variable "vsc_identifier" {}
 variable "vsc_token" {}
+variable "name" {}
 
 variable "tfe_token" {}
 
