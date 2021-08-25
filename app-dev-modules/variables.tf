@@ -1,6 +1,6 @@
 variable "name" {
   description = "The name of the resource being created."
-  # default = "dev-server-1"
+  default = "dev-server-1-daniell"
 }
 variable "location" {
   description = "The location of the network thats being created."
